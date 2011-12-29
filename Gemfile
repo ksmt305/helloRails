@@ -1,15 +1,12 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.1'
+gem 'rails', '3.1.3'
 gem 'heroku'
 
 
-group :development, :test do
-	gem 'sqlite3'
-end
 
 group :production do
-	gem "pg"
+	gem 'pg'
 end
 
 group :assets do
@@ -17,6 +14,11 @@ group :assets do
 	gem 'coffee-rails',	'~> 3.1.1'
 	gem 'uglifier',	'>= 1.0.3'
 end
+
+group :development, :test do
+	gem 'sqlite3'
+end
+
 
 gem 'jquery-rails'
 
